@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li><a href="{{ path('homepage_coucou') }}">Accueil</a></li>
+        {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+        <li><a href="{{ path('app_login') }}">Login</a></li>
+        {% else %}
+        <li><a href="{{ path('app_logout') }}">Logout</a></li>
+        {% endif %}
+    </ul>
+</nav>
