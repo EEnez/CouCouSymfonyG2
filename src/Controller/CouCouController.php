@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class CouCouController extends AbstractController
 {
-    #[Route('/', name: 'homepage')]
+    #[Route('/', name: 'homepage_coucou')]
     public function index(): Response
     {
         return $this->render('cou_cou/index.html.twig', [
